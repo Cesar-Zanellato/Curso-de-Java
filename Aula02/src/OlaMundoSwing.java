@@ -16,7 +16,7 @@ public class OlaMundoSwing extends JFrame {
         // Propriedades básicas da janela;
         window.setSize(500, 500);
         window.setVisible(true);
-        window.setTitle("Olá Mundo Swing");
+        window.setTitle("Olá Mundo");
 
         // Definindo posição;
         window.setLayout(new FlowLayout());
