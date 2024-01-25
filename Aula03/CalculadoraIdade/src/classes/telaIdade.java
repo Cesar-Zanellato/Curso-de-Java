@@ -17,9 +17,10 @@ public class telaIdade extends javax.swing.JFrame {
      * Creates new form telaIdade
      */
     public telaIdade() {
+        
         initComponents();
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -82,7 +83,7 @@ public class telaIdade extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnCalcular)
-                            .addComponent(lbResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(lbResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(61, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -117,6 +118,7 @@ public class telaIdade extends javax.swing.JFrame {
         int anoAtual = localDate.getYear();
         int idade = anoAtual - anoNascimento;
         
+        System.out.println(idade);
         lbAnoAtual.setText(Integer.toString(anoAtual));
         lbResultado.setText(Integer.toString(idade));
         
@@ -148,7 +150,7 @@ public class telaIdade extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(telaIdade.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+       
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
